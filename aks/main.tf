@@ -21,7 +21,7 @@ module "aks" {
   create_subnet           = var.create_subnet
   subnet_name             = var.subnet_name
   subnet_address_prefixes = var.subnet_address_prefixes
-  existing_subnet_id      = var.existing_subnet_id
+  existing_subnet_id      = var.existing_subnet_ids["aks"]
 
   # AKS
   cluster_name       = var.cluster_name
